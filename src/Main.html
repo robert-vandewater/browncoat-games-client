@@ -1,0 +1,59 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+		<title>Generic HTML File</title>
+		<link rel="stylesheet" type="text/css" href="css/mainStyle.css">
+		<link type="text/css" href="css/ui-lightness/jquery-ui-1.8.23.custom.css" rel="stylesheet" />
+		<script data-main="scriptLibrary/mainScript" src="scriptLibrary/require.js"></script>
+	</head>
+
+	<body>
+	
+		<header id="TitleCanvas">
+		</header>
+		<nav></nav>
+		
+		<section width="600px" height="480" style="float: left">
+			<div id="CanvasParent" style="position: relative;  min-width:800px; min-height:480px; overflow : auto">
+				<canvas id="LayerMapCanvas" width="1200" height="600" style="position: absolute; left: 0; top: 0; z-index: 0;">
+				</canvas>
+				<canvas id="LayerZocCanvas" width="1200" height="600" style="position: absolute; left: 0; top: 0; z-index: 1;">
+				</canvas>
+				<canvas id="LayerGridCanvas" width="1200" height="600" style="position: absolute; left: 0; top: 0; z-index: 2;">
+				</canvas>
+				<canvas id="LayerActionCanvas" width="1200" height="600" style="position: absolute; left: 0; top: 0; z-index: 3;">
+				</canvas>
+			</div>
+		</section>
+		<section width="10%" style="float:left; background: gray; min-width:200px; align: right">
+			<div id="RightPanelAccordion">
+				<h3><a href="#">Hexagon Information</a></h3>
+				<div>
+					<div><label for="CurrentHexViewer" style="display: block;   font-size: 12">CurrentHex</label><input id="CurrentHexViewer" type="text" /></div>
+					<div><label for="TradeValue" style="display: block;   font-size: 12">Trade:</label><input id="TradeValue" type="number" /></div>
+					<div><label for="MetalValue" style="display: block;   font-size: 12">Metal:</label><input id="MetalValue" type="number" /></div>
+					<div><label for="CMValue" style="display: block;   font-size: 12">Construction Materials:</label><input id="CMValue" type="number"  /></div>
+					<div><label for="GoldValue" style="display: block;   font-size: 12">Gold:</label><input id="GoldValue" type="number" /></div>
+					<div><label for="FoodValue" style="display: block;   font-size: 12">Food:</label><input id="FoodValue" type="number" /></div>
+					<div><label for="MithralValue" style="display: block;   font-size: 12">Mithral:</label><input id="MithralValue" type="number" /></div>
+					<div><label for="TerrainValue" style="display: block;   font-size: 12">Terrain Type:</label><input id="TerrainValue" type="text" /></div>
+					<input id="setHexButton" type="button" value="Set Values"/>
+				</div>
+				<h3><a href="#">Show Current Path</a></h3>
+				<div><input id="PathDisplay" type="text"/></div>
+			</div>
+		</section>
+		
+		<footer id="OptionPane" style="position: absolute; top: 540; overflow:auto">
+			
+			<input id="debugButton" type="button" value="Debug"/>
+			<input id="clearSelection" type="button" value="Clear Selection"/>
+			<input id="writeHexes" type="button" value="Write Hexes"/>
+			<label for="zoomLevel" style="margin-left: 10px">Zoom</label><input id="zoomLevel" type="range" min="1" max="5" value="1"/>
+			<div style="clear : both">
+				<textarea id="HexOutput" style="clear : both; width : 1200; Height : 1600">
+				</textarea>
+			</div>
+		</footer>	
+	</body>
+</html>

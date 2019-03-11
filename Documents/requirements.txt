@@ -1,0 +1,15 @@
+All,
+
+I have been doing some thinking about something Dave said while we were talking about the game here in Toronto.  Specifically, he said, "There needs to be one person who is the KEEPER of the rules, someone who arbitrates in case of indecision."  I have decided that I need to be that guy.
+
+The main reason for this is that the lion's share of the work that needs to be done before any money comes in is work that I have to do.  I will probably have to do stuff setting up the website, doing the game client and also a good portion of the rules engine.  I am not counting the work designing the game system because that is fun stuff that I would probably do anyway.
+
+Now if I am going to be motivated to do all of this work, I have to firmly believe in the vision behind the game.  "Well that might work, but I disagree" won't really cut it.
+
+A secondary reason is that the fantasy game that we are doing is something that I have put a lot of thought into over the last couple of years.  The reason for the two phase combat system was that I wanted to break the 2x the number of troops = 2 x number of enemy casualties linearity in most game systems.  That is the reason that bulk troop numbers determine the "casualty Profile" but have no other effect on combat.  
+
+Having said that, I obviously cannot do this game without your help.  Your thoughtful input will be essential in creating an engaging game.  I would love to have Gary's help fleshing out the mythology.  Dave and Steve would have to be partners in creating the engine.  Not to mention that at some point, I am going to need some financial assistance and if you guys don't believe in the game, then the game is a non-starter.  Obviously, along the lines of what Dave said here in Toronto, this will have to be a modified democracy.  If you guys agree on something, then I will obviously defer to you even though I disagree.
+
+Also, I suggest we do this as a round-robin strategy.  Once we have this game going, we can do the 4x space game that Dave has been creating and then whatever game that Steve has in mind.  If this is successful, there is no limit to the fun we can have.
+
+I hope this doesn't come across as a power grab or some attempt to derail the creative process.  From my perspective, it is a realistic assessment of what I need in order to do all the work that is going to be required.  

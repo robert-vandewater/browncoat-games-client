@@ -1,0 +1,50 @@
+Every hex has the following ratings:
+
+Trade:
+Metal Ore:
+Mithril:
+Gold:
+Construction Materials:
+Food:
+
+The production for 
+
+
+
+
+Kingdom Treasury
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Movement Cost:
+Terrain Type:
+Location Size (hamlet, village, town, major town, city, major city)
+
+Locations have
+-Fortification Level
+-Specialization (Iron, Mithril, Timber, Gold, Food, Trade, troop training?)
+
+Locations exert a ZOC that falls off as a function of the movement required to
+get to a zone.
+(SEE ZOC)
+
+Production is proportional to the number of hexes in the locations ZOC and the
+DEGREE OF CONTROL that the location has over the hex.
+(SEE ZOC)
+
+The Trade Mechanic
+

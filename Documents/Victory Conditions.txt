@@ -1,0 +1,37 @@
+When one alliance controls 5 of the cities of Light, they win the game.
+
+
+To Control a City of Light, an Alliance must first win an Orb of Light
+
+Once the Orb has been won at auction, it will be delivered to the capital of the player that contributed the largest amount of gold to the winning bid.
+
+There is one orb for each of the ruined cities of light.  (i.e. The Orb of Narvik is only good for the ruined city of Narvik.)
+
+
+When the Orb has been taken to its city:
+
+1.  The hex and its immediate surroundings are cleared of blight.
+2.  The city is restored as the people of Shalea hoping for a better 
+   life return.
+
+The Orb can no longer be removed or stolen and the city will be there until the end of the game.
+
+
+The Power of the Orbs:
+
+Each city with an orb is automatically "Blessed by the Light of Shalea"
+
+With 1 orb the player can designate a city that is "Blessed by the Light of Shalea".  That city will produce double and get bonuses to siege.  
+ 
+With 2 orbs, the player can cast:
+
+"Fair Weather" allows a fleet to move at double movement with no sea worthiness checks
+
+With 3 orbs, the player can cast:
+
+"Army of the Light" - potent bonuses to combat and movement speed to one army for a given duration
+
+With 4 orb, the alliance can cast a different spell (once a week)
+
+"Blessing of Peace" - Designate a single city in which no hostile action can take place for duration x.
+

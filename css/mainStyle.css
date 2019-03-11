@@ -1,0 +1,279 @@
+@CHARSET "ISO-8859-1";
+
+#tablePanel {
+	width : 100%;
+	overflow: scroll;
+	max-height: 200;
+	
+}
+
+.valueTable  th {
+	padding : 4;
+
+}
+
+.valueTable  th{
+	padding : 4;
+
+}
+
+.valueTable {
+	border : 1;
+}
+
+.valueTable td{
+	text-align: center; 	
+}
+
+.valueHeader:hover {
+	background : blue;
+	color: white;
+}
+
+.repeatValue {
+	margin-left: 5px;
+	margin-right:5px;
+}
+
+.repeatParent {
+	text-align: center; 
+
+}
+
+.unselectedValue:hover {
+	background : blue;
+	color: white;
+}
+
+.unselectedValue {
+	background : lightgray;
+	font-size :14px;
+	font-weight: bold;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 10px;
+	margin-right:10px;
+	outline-width : 1;
+	outline-color : black;
+	outline-style : dotted;
+	border-radius : 3px;
+}
+
+.selectedValue {
+	background : maroon;
+	color: white;
+	font-size :14px;
+	font-weight: bold;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 10px;
+	margin-right:10px;
+	outline-width : 1;
+	outline-color : black;
+	outline-style : dotted;
+	border-radius : 3px;
+}
+
+
+
+.UnselectedSlotUnit:hover {
+	background : blue;
+	color: white;
+}
+
+.UnselectedSlotUnit {
+	background : lightgray;
+	font-size :14px;
+	font-weight: bold;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 10px;
+	margin-right:10px;
+	outline-width : 1;
+	outline-color : black;
+	outline-style : dotted;
+	border-radius : 3px;
+}
+
+.SelectedSlotUnit {
+	background : maroon;
+	color: white;
+	font-size :14px;
+	font-weight: bold;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 10px;
+	margin-right:10px;
+	outline-width : 1;
+	outline-color : black;
+	outline-style : dotted;
+	border-radius : 3px;
+}
+
+.SelectedSlotTable {
+	width : 100%;
+	background : gray;
+	color: white;
+
+}
+
+.SelectedSlotTable td {
+	color:black;
+}
+.SelectedSlotTable  th{
+	text-align : center;
+	padding : 5;
+}
+
+.UnselectedSlotTable:hover {
+	background : blue;
+	color: white;
+}
+
+.UnselectedSlotTable {
+	background : lightgray;
+	width : 100%;
+}
+
+.UnselectedSlotTable  th{
+	text-align : center;
+	padding : 5;
+}
+
+.SlotTableMinorHeader {
+	font-size :12px;
+	font-weight: normal;
+}
+
+.SelectedTroopType {
+	background : blue;
+	color: white;
+	font-size :14px;
+	font-weight: bold;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 10px;
+	margin-right:10px;
+	outline-width : 1;
+	outline-color : black;
+	outline-style : dotted;
+	border-radius : 3px;
+}
+
+.UnselectedTroopType:hover {
+	background : blue;
+	color: white;
+}
+
+.UnselectedTroopType {
+	background : lightgray;
+	font-size :14px;
+	font-weight: bold;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 10px;
+	margin-right:10px;
+	outline-width : 1;
+	outline-color : black;
+	outline-style : dotted;
+	border-radius : 3px;
+}
+
+.SelectedBonus {
+	background : blue;
+	color: white;
+	font-size :14px;
+	font-weight: bold;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 10px;
+	margin-right:10px;
+	outline-width : 1;
+	outline-color : black;
+	outline-style : dotted;
+	border-radius : 3px;
+}
+
+.ValueTablePanel {
+	border-radius : 3px;
+	float:left; 
+	background: gray; 
+	width:920px; 
+	margin:20px; 
+	padding:20px
+}
+.BasicPanel {
+	border-radius : 3px;
+	float:left; 
+	background: gray; 
+	width:420px; 
+	margin:20px; 
+	padding:20px
+}
+
+.SectionPanel {
+	border-radius : 3px;
+	float:left; 
+	background: gray; 
+	width:420px; 
+	margin-left:20px; 
+	margin-top:20px; 
+	padding-right:20px
+}
+
+.AttributeValue {
+	width : 150px
+}
+
+.AttributeLabel {
+	margin-right: 3px;
+	margin-top: 3px;
+	text-align: right; 
+	float : left; 
+	width:200px;  
+	font-size: 12; 
+	font-weight : bold
+}
+
+LI {
+	font-size: 12;
+	font-weight : bold;
+}
+
+body {
+	font-family: "Tahoma", sans-serif;
+	font-size: 11px;
+	padding: 10px;
+}
+
+body  h1{
+	text-align: center;
+}
+
+div.ApplicationButtons {
+	clear:both;
+}
+
+.CloseButton {
+	float: right;
+	color : #4f81bd;
+	cursor: pointer;
+}
+
+a.TimePickerAMPMUnselected:hover{
+	background-color: #cccccc;
+}
+
+table.HourTable a:hover {
+	background-color: #cccccc;
+}
+
+#AddTab {
+    background: #E7EDF6;
+    padding: 5px 8px;
+    font-size: 16px;
+    text-decoration: none;
+    position: relative;
+    top: 2px;
+    color: #333;
+}

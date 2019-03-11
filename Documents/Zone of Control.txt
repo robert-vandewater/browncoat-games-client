@@ -1,0 +1,68 @@
+The ZOC (Zone of Control) Concept is extremely important
+
+Since ZOC is controlled by the relative power of the different players
+contesting for control, it is vital to have a ZOC RATING that can be directly
+compared to determine who has control of a given hex.
+
+if ZOC RATING Player 1 > ZOC RATING Player 2 for hex abcd
+
+hex abcd is controlled by player 1
+
+Every location and hunkered down army has a ZOC RATING
+
+ZOC RATING proposed formula:
+
+For an individual army or location:
+
+ZOC RATING = ARMY STRENGTH * FORTIFICATION FACTOR * LOCATION SIZE FACTOR * ARMY
+MOVEMENT SPEED / DISTANCE FROM HEX
+
+ARMY STRENGTH = # Troops * offensive rating * defensive rating
+FORTIFICATION FACTOR = 3 for major fortifications, 2 for fortifications
+LOCATION SIZE FACTOR = 3 for Major City, 2 for city , 1 for Town,
+ARMY MOVEMENT SPEED = movement speed of the garrison
+DISTANCE FROM HEX = Number movement points to get to hex from the location
+
+If there is no garrison, the location is assumed to have a minimal garrison that
+depends on the Location Size and Fortification level
+
+Neutral hexes
+
+Every hex has a CONTROL RESISTANCE based on terrain type. (Plains hexes are
+easy to control, Mountain hexes are difficult)
+
+A hex is neutral if no player has ZOC RATING > CONTROL RESISTANCE
+
+TOTAL ZOC RATING (?)
+
+Do we make ZOC RATING additive?
+
+What if a player has multiple cities that have a non-zero ZOC RATING on a given
+hex?
+
+Player 1 has 3 cities "Lumbaba" and "Moriki" and "Tresadai" that exert ZOC
+RATING of 300, 100 and 125. For a plains hex with CONTROL RESISTANCE = 500
+
+Would player 1 have control of the hex? Or not?
+
+ALLIED ZOC RATING
+
+What do we do if an alliance has a greater CONTROL RATING than a single player
+of the opposite alliance?
+
+It is possible that Player 1 of the red alliance has ZOC RATING 550 over a
+plains hex while Player 7 + Player 9 of the blue alliance exert 300 and 400 on
+that same hex. What happens in this case?
+
+If a plains hex have a CONTROL RESISTANCE of 500, Player 7 and Player 9 do not
+have enough to control the hex.
+
+Player 1 has enough to control the hex, but Player 7 and 9 are stronger than he
+is in that hex.
+
+If the red alliance ZOC RATING is < the blue alliance ZOC RATING but a red
+alliance player has the highest player ZOC, then that hex is considered to be
+part of the blue alliance ZOC.
+
+A hex in the blue alliance ZOC does not add to any blue players economy, but is
+in the alliance ZOC for purposes of movement only.

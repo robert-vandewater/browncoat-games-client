@@ -1,0 +1,12 @@
+The Trade rating is summed up for all the hexes in the allied ZOC, every city in that
+ZOC gets that rating as an income bonus.
+
+Major cities get a 50% trade bonus
+
+Cities with trade specialization get an additional 50% bonus
+
+Islands 
+
+For purposes of trade, every ZOC that has a PORT city is considered connected to every other ZOC that has a PORT city
+
+

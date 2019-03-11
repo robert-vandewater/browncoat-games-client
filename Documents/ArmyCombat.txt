@@ -1,0 +1,171 @@
+Army Combat
+
+
+Each Army WILL have a STANCE (Win at all costs/Determined/Skittish/Evade/Harry)
+
+If both of the armies are in "harry" or "evade" mode, then no combat will take place.
+
+If one of the armies is in "Harry" mode, then they avoid combat as long as their movementrate > enemy movement rate * 1.4
+
+If one of the armies is in "Evade" mode, then they avoid combat as long as their movement > enemy movement rate * 1.2
+
+Each Army MAY have characters 
+
+A RANDOM FACTOR will be determined once for the battle.  This factor is applied to the lethality of each round and could have a large cumulative effect.
+
+Each Army WILL have all its troops in 1 of 10 slots:
+
+1 Cavalry Slot
+
+3 Reserve Slots (Strongest, 2nd Strongest, weakest)
+
+3 Front Slots (1/2/3)
+
+**** NOTE ****	
+	The FRONT slots used to be divided into left/right/center BUT this leads to some confusion.  In combat between Army A and Army B, the Front Left Slot 
+	of Army A would fight the Front Right slot of Army B.  This is confusing.  Call them slots 1, 2, 3 and say that A1 fights B1.
+
+
+3 Support Slots (1/2/3)
+
+When armies first engage the following sequence of events occurs:
+
+The Support Slots open fire on the Front Slots of the opposing side and casualties are calculated.
+
+The Cavalry Slots engage
+
+The corresponding Front slots engage (left v right/ center v center)
+
+For each engaged slot:
+	1.  The overall strength of the slot is calculated.
+	
+	Overall Strength = function( terrain, weapon quality, terrain, troop training, troop number, applicable spells, applicable items)
+	
+	2.  The comparative strengths are used to select a CASUALTY PROFILE
+	
+	CASUALTY PROFILE (% Killed, % Wounded, % Deserted)
+	      Overun > 20: 1
+		  20 : 1
+		  15 : 1
+		  10 : 1
+		  5  : 1
+		  4  : 1
+		  3  : 1
+		  2  : 1
+		  1  : 1
+          1  : 2
+		  1  : 3
+		  1  : 4
+		  1  : 5
+		  1  : 10
+		  1  : 15
+		  1  : 20
+		  Overun < 20 : 1
+
+    ** Note that lopsided casualty profiles typically have moderate increases in killed / wounded percentages but large differences in desertion percentage
+	** Note A random factor 
+		  
+		  
+	3.  The casualty profile is modified by the appropriate modifiers (spells, training level difference, weapon quality difference)
+	
+	These modifications are calculated as follows:
+	
+	Slot 1 of Army A has had Casualty profile 1:1 inflicted upon it.  This is (for example) .02k, .04w, .06d
+	There are 3 different types of troops in Slot 1 of Army A
+	
+	100 Type A training level 3 armor 3 weapons 3
+	100 Type B training level 2 armor 2 weapons 2
+	100 Type C training level 1 armor 1 weapons 1
+	
+	There are 3 different types of troops in Slot 1 of Army B
+	
+	100 Type D training level 1 armor 2 weapons 2
+	100 TYPE E training level 2 armor 3 weapons 3
+	100 TYPE F training level 3 armor 1 weapons 1
+	
+	each slot in army 1 (A,B,C) suffers .02k, .04w, .06d
+	
+	these values are modified as follows:
+	
+	% TYPE D = % of OVERALL SLOT STRENGTH contributed by TYPE D
+	% TYPE E = % of OVERALL SLOT STRENGTH contributed by TYPE E	
+	% TYPE F = % of OVERALL SLOT STRENGTH contributed by TYPE F	
+	
+	TYPE A troops suffer .02 Killed, .04 wounded and .06 deserted with the following modifiers
+	
+	killed = .02 * % TYPE D (TLD_AD + AWD_AD) + 
+	         .02 * % TYPE E (TLD_AE + AWD_AE) + 
+			 .02 * % TYPE F (TLD_AF + AWD_AF)
+	where TLD_AD is the Training level difference modifier to KILLED between A and D
+	      AWD_AD is the Armor/Weapon difference modifier to KILLED between A and E 
+		  and so on
+  
+	killed and wounded is modified by training level difference / offensive quality difference / slot penetration flanking bonuses
+	
+	deserted is modified by army morale / spells / commander level / training level (not level difference) / defensive quality difference / offensive quality difference 	
+	
+	SLOT OVERRUN
+	
+	When a slot is overrun, it endures the OVERRUN slot casualty profile and inflicts the inverse profile on the enemy.  
+	The slot is then disolved and the remaining troops are added to the next opponent slot of the slot that defeated them.
+	(This avoids a huge discontinuity in casualties between overrun slots and those that are not overrun.  Such a discontinuity
+	may be "REALISTIC" but one goal of the combat system is to avoid the JUGGERNAUT phenomena where the most effective strategy
+	is creating a single gigantic army.)
+	
+	SLOT COLLAPSE
+	
+	When the total number of casualties exceeds the casualty threshold determined by the ARMY STANCE, the slot has collapsed.
+	The morale of the army is penalized, the slots casualties are rounded off and applied to the troops in the slot.
+	
+	SLOT REPLACEMENT
+	
+	For Front Slot 1 of an army, the order of combat is:
+	
+	enemy Front Slot 1,
+	enemy Reserve Slot 1 (with 10% penetration bonus)
+	enemy Reserve Slot 2 (with 10% penetration bonus)
+	enemy Reserve Slot 3 (with 10% penetration bonus)
+	enemy Support Slot 1 (with 25% penetration bonus)
+	enemy Front   Slot 2 (with 50% flanking bonus)
+	enemy Support Slot 2 (with 50% flanking bonus)
+	enemy Front Slot   3 (with 50% flanking bonus)
+	enemy Support Slot 3 (with 50% flanking bonus)
+	enemy Cavarly Slot   (no bonus)
+	
+	For the Cavalry Slot
+	enemy Cavalry Slot
+	enemy Reserve Slot 1 (with 10% penetration bonus)
+	enemy Reserve Slot 2 (with 10% penetration bonus)
+	enemy Reserve Slot 3 (with 10% penetration bonus)
+	enemy Support Slot 1 (with 25% penetration bonus)
+	enemy Support Slot 2 (with 25% penetration bonus)
+	enemy Support Slot 3 (with 25% penetration bonus)
+	enemy Front   Slot 1 (with 25% penetration bonus)
+	enemy Front   Slot 2 (with 25% penetration bonus)
+	enemy Front   Slot 3 (with 25% penetration bonus)
+		
+	Note that the PENTRATION BONUSES are LETHALITY bonuses that modify the CASUALTY PROFILE and not OVERALL STREGTH bonuses.
+	Note also that commanders skill will effect the penetration bonus as follows:
+	
+		[ + (Penetrating Slot's Commander Rating / 2)  - (defending slot Commander Rating / 3) ] / BALANCE FACTOR
+	
+	Note that the defender's commander rating is not as significant as the offensive commander's rating.
+	 
+	ARMY DEFEAT
+		
+	When all of the slots of a given army have been defeated the army has been defeated.
+	
+	Defeated armies incur a morale penalty depending on their stance
+	Defeated armies will return to their sponsoring city 
+	All troops in the army with a slower movement rate than the victorious army will abandon their equipment.
+	(This abandoned equipment suffers a smaller loss percentage than the spoils gained through killing)
+	
+	Victorious Army 
+	Gets spoils depending on the number of troops killed and their equipment (Minus a hefty loss factor)
+	Gain a small morale increase.
+	Gain experience and possible level.
+	
+	
+	
+	
+	

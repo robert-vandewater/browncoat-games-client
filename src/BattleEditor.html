@@ -1,0 +1,189 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+		<title>Generic HTML File</title>
+		<link rel="stylesheet" type="text/css" href="css/mainStyle.css">
+		<link type="text/css" href="css/ui-lightness/jquery-ui-1.8.23.custom.css" rel="stylesheet" />
+		<script data-main="scriptLibrary/battleEditor" src="scriptLibrary/require.js"></script>
+	</head>
+
+	<body>
+	
+		<section>
+			<div  class="BasicPanel">
+				<h3 style="text-align:center">Attacker Army Characteristics</h3>
+				<div><label for="AarmyMorale" class="AttributeLabel">Army Morale:</label><input id="AarmyMorale" type="number" class="AttributeValue" /></div>
+				<div><label for="AcommanderRating" class="AttributeLabel">Commander Rating:</label><input id="AcommanderRating" type="number" class="AttributeValue"/></div>
+				<div><label for="AcasualtyThreshold" class="AttributeLabel">Casualty Threshold:</label>
+					<select id = "AcasualtyThreshold" class="AttributeValue">
+						<option>Evade</option>
+						<option>Prepared to Retreat</option>
+						<option>Cautious</option>
+						<option>Stand Your Ground</option>
+						<option>Grim Determination</option>
+						<option>Last Man</option>
+					</select>
+				</div>
+				<div><label for="terrainType" class="AttributeLabel">Terrain Type:</label>
+					<select id = "terrainType" class="AttributeValue">
+						<option value = "Swamp">Swamp</option>
+						<option value = "Plains">Plains</option>
+						<option value = "Desert">Desert</option>
+						<option value = "Mountains">Mountains</option>
+						<option value = "Forest">Forest</option>
+						<option value = "Hills">Hills</option>
+					</select>
+				</div>
+			</div>
+		</section>
+		
+		<section style="float:left">
+			<div  class="BasicPanel">
+				<h3 style="text-align:center">Defender Army Characteristics</h3>
+				<div><label for="DarmyMorale" class="AttributeLabel">Army Morale:</label><input id="DarmyMorale" type="number" class="AttributeValue" /></div>
+				<div><label for="DcommanderRating" class="AttributeLabel">Commander Rating:</label><input id="DcommanderRating" type="number" class="AttributeValue"/></div>
+				<div><label for="DcasualtyThreshold" class="AttributeLabel">Casualty Threshold:</label>
+					<select id = "DcasualtyThreshold" class="AttributeValue">
+						<option>Evade</option>
+						<option>Prepared to Retreat</option>
+						<option>Cautious</option>
+						<option>Stand Your Ground</option>
+						<option>Grim Determination</option>
+						<option>Last Man</option>
+					</select>
+				</div>
+			</div>
+		</section>		
+		<div style="clear:both"></div>
+
+		<section>
+			<div  class="BasicPanel">
+				<h2 style="text-align:center">Attacker Army</h2>
+				<table id="Acavalry" class="UnselectedSlotTable">
+					<tr><th colspan="5">Cavalry Slot</th></tr>
+					<tr class="SlotTableMinorHeader"><th>Troop Type</th><th>Number Troops</th><th>Level Troops</th><th>Armor</th><th>Weapons</th></tr>
+				</table>
+				<table id="AfrontTop"  class="UnselectedSlotTable">
+					<tr><th colspan="5">Front Top Slot</th></tr>
+					<tr class="SlotTableMinorHeader"><th>Troop Type</th><th>Number Troops</th><th>Level Troops</th><th>Armor</th><th>Weapons</th></tr>
+				</table>
+				<table  id="AfrontCenter"  class="UnselectedSlotTable">
+					<tr><th colspan="5">Front Center Slot</th></tr>
+					<tr class="SlotTableMinorHeader"><th>Troop Type</th><th>Number Troops</th><th>Level Troops</th><th>Armor</th><th>Weapons</th></tr>
+				</table>
+				<table id="AfrontBottom"  class="UnselectedSlotTable">
+					<tr><th colspan="5">Front Bottom Slot</th></tr>
+					<tr class="SlotTableMinorHeader"><th>Troop Type</th><th>Number Troops</th><th>Level Troops</th><th>Armor</th><th>Weapons</th></tr>
+				</table>
+				<table id="AsupportTop"  class="UnselectedSlotTable">
+					<tr><th colspan="5">Support Top Slot</th></tr>
+					<tr class="SlotTableMinorHeader"><th>Troop Type</th><th>Number Troops</th><th>Level Troops</th><th>Armor</th><th>Weapons</th></tr>
+				</table>
+				<table id="AsupportCenter" class="UnselectedSlotTable">
+					<tr><th colspan="5">Support Center Slot</th></tr>
+					<tr class="SlotTableMinorHeader"><th>Troop Type</th><th>Number Troops</th><th>Level Troops</th><th>Armor</th><th>Weapons</th></tr>
+				</table>
+				<table id="AsupportBottom" class="UnselectedSlotTable">
+					<tr><th colspan="5">Support Bottom Slot</th></tr>
+					<tr class="SlotTableMinorHeader"><th>Troop Type</th><th>Number Troops</th><th>Level Troops</th><th>Armor</th><th>Weapons</th></tr>
+				</table>
+				<table id="Areserve1" class="UnselectedSlotTable">
+					<tr><th colspan="5">Reserve Slot 1</th></tr>
+					<tr class="SlotTableMinorHeader"><th>Troop Type</th><th>Number Troops</th><th>Level Troops</th><th>Armor</th><th>Weapons</th></tr>
+				</table>
+				<table id="Areserve2" class="UnselectedSlotTable">
+					<tr><th colspan="5">Reserve Slot 2</th></tr>
+					<tr class="SlotTableMinorHeader"><th>Troop Type</th><th>Number Troops</th><th>Level Troops</th><th>Armor</th><th>Weapons</th></tr>
+				</table>
+				<table id="Areserve3" class="UnselectedSlotTable">
+					<tr><th colspan="5">Reserve Slot 3</th></tr>
+					<tr class="SlotTableMinorHeader"><th>Troop Type</th><th>Number Troops</th><th>Level Troops</th><th>Armor</th><th>Weapons</th></tr>
+				</table>
+			</div>
+		</section>
+
+		<section style="float:left">
+			<div  class="BasicPanel">
+				<h2 style="text-align:center">Defender Army</h2>
+				<table id="Dcavalry" class="UnselectedSlotTable">
+					<tr><th colspan="5">Cavalry Slot</th></tr>
+					<tr class="SlotTableMinorHeader"><th>Troop Type</th><th>Number Troops</th><th>Level Troops</th><th>Armor</th><th>Weapons</th></tr>
+				</table>
+				<table id="DfrontTop"  class="UnselectedSlotTable">
+					<tr><th colspan="5">Front Top Slot</th></tr>
+					<tr class="SlotTableMinorHeader"><th>Troop Type</th><th>Number Troops</th><th>Level Troops</th><th>Armor</th><th>Weapons</th></tr>
+				</table>
+				<table  id="DfrontCenter"  class="UnselectedSlotTable">
+					<tr><th colspan="5">Front Center Slot</th></tr>
+					<tr class="SlotTableMinorHeader"><th>Troop Type</th><th>Number Troops</th><th>Level Troops</th><th>Armor</th><th>Weapons</th></tr>
+				</table>
+				<table id="DfrontBottom"  class="UnselectedSlotTable">
+					<tr><th colspan="5">Front Bottom Slot</th></tr>
+					<tr class="SlotTableMinorHeader"><th>Troop Type</th><th>Number Troops</th><th>Level Troops</th><th>Armor</th><th>Weapons</th></tr>
+				</table>
+				<table id="DsupportTop"  class="UnselectedSlotTable">
+					<tr><th colspan="5">Support Top Slot</th></tr>
+					<tr class="SlotTableMinorHeader"><th>Troop Type</th><th>Number Troops</th><th>Level Troops</th><th>Armor</th><th>Weapons</th></tr>
+				</table>
+				<table id="DsupportCenter" class="UnselectedSlotTable">
+					<tr><th colspan="5">Support Center Slot</th></tr>
+					<tr class="SlotTableMinorHeader"><th>Troop Type</th><th>Number Troops</th><th>Level Troops</th><th>Armor</th><th>Weapons</th></tr>
+				</table>
+				<table id="DsupportBottom" class="UnselectedSlotTable">
+					<tr><th colspan="5">Support Bottom Slot</th></tr>
+					<tr class="SlotTableMinorHeader"><th>Troop Type</th><th>Number Troops</th><th>Level Troops</th><th>Armor</th><th>Weapons</th></tr>
+				</table>
+				<table id="Dreserve1" class="UnselectedSlotTable">
+					<tr><th colspan="5">Reserve Slot 1</th></tr>
+					<tr class="SlotTableMinorHeader"><th>Troop Type</th><th>Number Troops</th><th>Level Troops</th><th>Armor</th><th>Weapons</th></tr>
+				</table>
+				<table id="Dreserve2" class="UnselectedSlotTable">
+					<tr><th colspan="5">Reserve Slot 2</th></tr>
+					<tr class="SlotTableMinorHeader"><th>Troop Type</th><th>Number Troops</th><th>Level Troops</th><th>Armor</th><th>Weapons</th></tr>
+				</table>
+				<table id="Dreserve3" class="UnselectedSlotTable">
+					<tr><th colspan="5">Reserve Slot 3</th></tr>
+					<tr class="SlotTableMinorHeader"><th>Troop Type</th><th>Number Troops</th><th>Level Troops</th><th>Armor</th><th>Weapons</th></tr>
+				</table>
+			</div>
+		</section>
+
+		<div style="clear:both"></div>
+		
+		<section style="float:left">
+			<div  class="BasicPanel">
+				<h3  style="text-align:center">Unit Information</h3>
+				<div>
+					<div>
+						<label  class="AttributeLabel">Troop Type:</label>
+							<select id = "TroopType" class="AttributeValue">
+							</select>
+					</div>			
+					<div><label for="numberTroops" class="AttributeLabel">Number Troops:</label><input id="numberTroops" type="number" class="AttributeValue" /></div>
+					<div><label for="levelTroops" class="AttributeLabel">Troop Level:</label><input id="levelTroops" type="number" class="AttributeValue"/></div>
+					<div><label for="armor" class="AttributeLabel">Armor Rating:</label><input id="armor" type="number" class="AttributeValue" /></div>
+					<div><label for="weapons" class="AttributeLabel">Weapon Rating:</label><input id="weapons" type="number" class="AttributeValue" /></div>
+					<input id="addUnit" type="button" value="Add Unit"/>
+					<input id="removeUnit" type="button" value="Remove Unit"/>
+				</div>
+			</div>
+		</section>
+
+		<div style="clear:both"></div>
+		<OL>
+			<LI>Make sure that the file combatSimScripts/BattleDefinition.js has the correct JSON in between the //INSERT HERE </LI>
+			<LI>Load BattleEditor.html into the CHROME browser</LI>
+			<LI>Generate the JSON that describes the troop types by hitting the "Refresh" button</LI>
+			<LI><a href="http://jsonlint.com/">Beautify the JSON by pasting it into the window and hitting the "Validate" button at this site.</a></LI>
+			<LI>Copy the beautified JSON between the INSERT tags in cobatSimScripts/BattleDefinition.js</LI>
+		</OL>	
+		
+		<footer id="OutputPane">
+			<input id="refreshBattle" type="button" value="Refresh"/>
+			<div style="clear : both">
+				<textarea id="battleOutput" style="clear : both; width : 1200; Height : 1600">
+				</textarea>
+			</div>
+		</footer>	
+	</body>
+</html>

@@ -1,0 +1,15 @@
+The Blighted Lands are lands destroyed by the Tarnim'Dal during the War of Light and Darkness.  They are contaminated with extra-planar magical power and the abode of creatures that escaped from other dimensions to Shalea.  They cover most of central Shalea and have the following properties:
+
+High Resistance to ZOC
+Low Movement Rate
+Resource productivity greatly reduced
+Possible recruitment of Tarnim'Dal
+Armies in Blight undergo numerical attrition
+Armies in Blight undergo attrition to morale
+
+The Blighted Lands can be cleansed in one of two ways.
+
+A high level mage spell can clear a blighted hex.
+
+A Gray Council action can clear a blighted hex.  (or more than one--balance)
+

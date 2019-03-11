@@ -1,0 +1,97 @@
+The Gray Council
+
+The Gray Council is made up of those mages who tried to reform the Council of Light after the War of Brothers, but were violently rejected.  As a group, they are disillusioned and wary of others in Shalea.
+
+The Orb Auction
+
+After the first few weeks of the game, the Gray Council will begin auctioning off the Orbs of Power that they are recovering from other planes.  The rules of the auction.
+
+-The orbs are auctioned off in random order.
+-The name of the orb and the city that it goes to is announced at the start of the auction.
+-The orb auction will end exactly a week after it has started.
+-Any player may bid on the current orb at any time once the auction starts.
+-The bidding is SECRET.  No other player is given any information on the current status of the Auction other than the remaining time.
+-The Gold is deducted from the Kingdom's treasury immediately when the bid is placed.
+-The minimum bid a player can make on an orb is 5000 gold and this increases with every subsequent auction.
+-The winner of the bid is SECRET.  A player knows that he won the bid when he receives the orb at his capital.
+-The alliance that bid the most gold will win the auction.
+-The player in the winning alliance that bid the most gold will receive the Orb.
+-Orbs can be traded among allies.
+-The alliance that loses the bid gets the gold that was bid back.
+-ALL of the players in the winning alliance do not get their gold back.
+
+
+Preventative Bidding
+
+Instead of bidding to obatin an orb, an alliance/player may bid to prevent the other alliance from obtaining the orb.  The final bid must be at least 2x the value of the sum of all the preventative bids or the orb is not recovered.
+
+Character Actions and the Bidding Process:
+
+Characters can be used to influence the Auction process.
+
+Agent actions can be used to determine any kindgoms current bid.
+
+Any character can be ordered to the Island of Tharnos to do a "Last Minute Bid" for the orb currently being auctioned.  The round trip to Tharnos takes 4 days and the maximum additional gold to spend is specified in the order.  This amount is in addition to the "official" bid that must exceed the current minimum.  Only one character per kingdom can participate in a Bidding Frenzy.
+
+The Bidding Frenzy
+
+At the end of an auction, the official bids are summed up and the winning alliance selected.  The bidding frenzy will now commence.
+
+The easiest way to explain the bidding frenzy is an example.
+
+The Northern Alliance has an offical bid of 32,000 gold.
+The Southern Alliance has an official bid of 35,000 gold.
+
+The northern Alliance has two characters that have been sent to do a "Last Minute Bid"
+
+Threlmar authorized to spend 5001 gold
+Kelmar autorized to spend 3000 gold.
+
+The Southern Alliance has one character that has been sent to do a last minute bid.
+
+Narden authorized to spend 5000 gold
+
+When it is announced that the Southern alliance has won the auction,  
+Threlmar adds an additional 3001 gold to the Northern Alliance bid.
+Narden adds an additional 2 g to the Southern alliance bid.
+. . . 
+the bidding continues until the Southern Alliance is declared the winner with final bid of 37,002.
+
+At this point, Kelmar begins to spend his gold.
+The final bid results with the Northern Alliance winning the auction with a final bid of 40,001 gold.
+
+
+Note that the agent with the highest authorized amount of gold to spend will bid first, but only if his gold is sufficient to make up  the difference between the official bids.
+
+Note that a country MUST pay the minimum bid in order to have their character participate in a "Last Minute Bid"
+
+The Gray Council's Services
+
+In addition to the Orb Auction, the Grey Council auctions its services up for bidding once every ? days.  When the Grey Council's services are won, they allow the winning player to perform one of the following actions:
+
+
+1.  Recover an artifact 
+
+Many of the artifacts of Shalea were lost during the War of Light and Darkness.  The Grey Council can be asked to retrieve one of these lost artifacts and a randomly selected artifact will be sent to the player.
+
+
+2.  Cleanse the Blight
+
+The Grey Council has the ability to cleanse the blight from a certain number of hexes and will do so upon request.
+
+
+3.  Bestow the Blessing of Shalea
+
+The Blessing of Shalea is a large bonus to city production and it lasts for a given duration.  (Also gives bonuses against agent actions and sieges)
+
+
+4.  Summons an army of Tarnim'Dal to attack a city
+
+
+
+
+
+
+
+
+

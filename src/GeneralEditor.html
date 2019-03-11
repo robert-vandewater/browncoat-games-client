@@ -1,0 +1,98 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+		<title>Generic HTML File</title>
+		<link rel="stylesheet" type="text/css" href="css/mainStyle.css">
+		<link type="text/css" href="css/ui-lightness/jquery-ui-1.8.23.custom.css" rel="stylesheet" />
+		<script data-main="scriptLibrary/generalEditor" src="scriptLibrary/require.js"></script>
+	</head>
+
+	<body>
+			
+		<section>
+			<div class="BasicPanel">
+				<h3 style="text-align:center">Available Sources</h3>
+				<select id = "availableSources" class="AttributeValue">
+					<option>Dummy Do not remove</option>
+				</select>
+				<input id="loadValues" type="button" value="Load Values"/>
+			</div>
+		</section>
+		
+		<section style="float:left">
+			<div class="BasicPanel">
+				<H3 style="text-align:center">Add Value Field from Global Fields</H3>
+				<div id="AddValuePanel"></div>
+				<div><label for="globalFields" class="AttributeLabel">Global Fields:</label><select id="globalFields" size="10"><option>Dummy do not remove</option></select></div>
+				<div><input id="addParameter"  type="button" value="Add Parameter"/></div>
+			</div>
+		</section>
+		
+		<div style="clear:both"></div>
+		<br/>
+		<br/>
+		
+		<section>
+			<div class="BasicPanel">
+				<H3 style="text-align:center">Current Value</H3>
+				<div id="CurrentValuePanel"></div>
+				<input id="addValue" type="button" value="Add Value"/>
+			</div>
+		</section>
+
+		<section style="float:left">
+			<div class="BasicPanel">
+				<H3 style="text-align:center">Add Global Field</H3>
+				<div id="AddParameterPanel"></div>
+				<div><label for="displayName" class="AttributeLabel">Display Name:</label><input id="displayName"   type="text" class="AttributeValue" /></div>
+				<div><label for="valueType" class="AttributeLabel">Parameter Type:</label><select id="valueType"> <option>text</option><option>number</option><option>checkbox</option></select></div>
+				<div><label for="defaultValue" class="AttributeLabel">Default Value:</label><input id="defaultValue"   type="text" class="AttributeValue" /></div>
+				<div><label for="abbreviationValue" class="AttributeLabel">Abbreviation:</label><input id="abbreviationValue"   type="text" class="AttributeValue" /></div>
+				<div><label for="isList" class="AttributeLabel">is List?:</label><input id="isList"   type="checkbox" class="AttributeValue" /></div>
+				<div><input id="addGlobalField"  type="button" value="Add Global Field"/></div>
+			</div>
+		</section>
+		
+		<div style="clear:both"></div>
+		<br/>
+		<br/>				
+
+		<div style="clear:both"></div>
+		<br/>
+		<br/>		
+		
+		<section >
+			<div class="ValueTablePanel">
+				<H3 style="text-align:center">Value Table</H3>
+				<div id="tablePanel">
+					<table class="valueTable"></table>
+				</div>
+				<input id="removeValue" type="button" value="Remove Value"/>
+				<input id="refreshTable" type="button" value="Refresh Table"/>
+				<div><label for="filterSelect" class="AttributeLabel">Filter on Field:</label><select id="filterSelect"></select></div>
+				<div id="filterValueDiv"/>
+			</div>
+		</section>
+
+		<div style="clear:both"></div>
+		<br/>
+		<br/>		
+
+		<OL>
+			<LI>Make sure that the file data/*.js has the correct JSON in between the //INSERT HERE </LI>
+			<LI>Load GeneralEditor.html into the CHROME browser</LI>
+			<LI>Generate the JSON that describes the troop types by hitting the "Refresh" button</LI>
+			<LI><a href="http://jsonlint.com/">Beautify the JSON by pasting it into the window and hitting the "Validate" button at this site.</a></LI>
+			<LI>Copy the beautified JSON between the INSERT tags in data/*.js</LI>
+		</OL>	
+		
+		<footer id="OutputPane">			
+			<input id="refresValues" type="button" value="Refresh"/>
+			<input id="refresGlobals" type="button" value="Refresh Global Fields"/>
+			<div style="clear : both">
+				<textarea id="generalDataOutput" style="clear : both; width : 1200; Height : 1600">
+				</textarea>
+			</div>
+		</footer>	
+	</body>
+</html>
